@@ -1,28 +1,6 @@
-QtChat
+Chat Bot, based on Theano and seq2seq
 ======
 
-A python chatroom 
+pip install -r requirements.txt
 
-
-Install PySide
-
-
-    pip install PySide
-
-
-    
-or
-
-    easy_install PySide
-    
-    
-Run the sever
-
-
-    python chat_server.py
-    
-
-Run the client
-
-    python chat.py <nick_name>
-    
+python main.py    

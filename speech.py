@@ -24,7 +24,7 @@ def recog():
         'lan': 'zh',
     })
     print res['result'][0]
-    return res['result'][0] 
+    return res['result'][0]
 
 
 if __name__ == '__main__':

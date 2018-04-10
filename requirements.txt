@@ -1,0 +1,6 @@
+theano
+numpy
+gensim
+sklearn
+aip
+pyaudio

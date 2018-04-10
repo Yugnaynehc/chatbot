@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Date    : 2016-12-08 10:56:55
-# @Author  : He Liang (helianghit@foxmail.com)
-# @Link    : https://github.com/HeLiangHIT
 
 import os
 import sys
@@ -28,11 +25,8 @@ class TextEdit(QTextEdit, QObject):
 
     def keyPressEvent(self, e):
         # print e.key() == Qt.Key_Return,e.key() == Qt.Key_Enter, e.modifiers() == Qt.ControlModifier
-        # if (e.key() == Qt.Key_Return) and (e.modifiers() == Qt.ControlModifier):
-        #     self.entered.emit()  # ctrl+return 输入
-        if e.key() == Qt.Key_Return:
-            self.entered.emit()  # return 输入
-            self.clear()
+        if (e.key() == Qt.Key_Return) and (e.modifiers() == Qt.ControlModifier):
+            self.entered.emit()  # ctrl+enter 输入
         super(TextEdit, self).keyPressEvent(e)
 
 
